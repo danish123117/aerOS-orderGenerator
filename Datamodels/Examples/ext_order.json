@@ -1,0 +1,11 @@
+{
+    "id": "urn:ngsi-ld:extOrder:order001",
+    "type": "extOrder",
+    "timestamp": "2024-01-16T17:50:07.5870Z",
+    "orderId": "order001",
+    "orderQuantity":2
+
+}
+
+
+

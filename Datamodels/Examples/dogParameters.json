@@ -1,0 +1,30 @@
+[
+    {
+        "id": "urn:ngsi-ld:dogparms:balanced",
+        "type": "dogparms",
+        "min_arrival_gap": 10,
+        "max_arrival_gap":12,
+        "min_quantity":1,
+        "max_quantity" : 8
+    },
+    {
+        "id": "urn:ngsi-ld:dogparms:agvcord",
+        "type": "dogparms",
+        "min_arrival_gap": 10,
+        "max_arrival_gap":12,
+        "min_quantity":1,
+        "max_quantity" : 8
+    },
+    {
+        "id": "urn:ngsi-ld:dogparms:outsource",
+        "type": "dogparms",
+        "min_arrival_gap": 10,
+        "max_arrival_gap":12,
+        "min_quantity":1,
+        "max_quantity" : 8
+    }
+
+]
+
+
+

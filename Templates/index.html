@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <title>Centered Layout</title>
+</head>
+<body>
+    <header class="header">
+        <a href="https://aeros-project.eu/"><img class="logo" src="{{ url_for('static', filename='images/aerOS-logo.png') }}" alt="aeROS logo"></a>
+        <a href="https://aeros-project.eu/use-cases/"><img class="usecase proj" src="{{ url_for('static', filename='images/title2.png') }}" alt="Use-case" height="40"></a>
+        <a href="https://www.made-cc.eu/en/"><img class="logo" src="{{ url_for('static', filename='images/logo_MADE.png') }}" alt="MADE logo"></a>
+        <a href="https://www.polimi.it/en/"><img class="logo" src="{{ url_for('static', filename='images/Logo_Politecnico_Milano.png') }}" alt="POLIMI logo"></a>
+    </header>
+
+    <main class="container">
+        <section class="main">
+            <label for="order-frequency">Select Order Frequency:</label>
+            <select id="order-frequency">
+                <option value="Unconstrained">Unconstrained</option>
+                <option value="At Capacity" selected>At Capacity</option>
+                <option value="Over Loaded">Over Loaded</option>
+            </select>
+            
+            <button id="start-btn">Start</button>
+            <button id="stop-btn" disabled>Stop</button>
+        </section>
+
+        <section class="main2">
+            <h2>Generated Orders:</h2>
+            <div id="order-container">
+                <p>No orders generated yet.</p>  
+            </div>
+        </section>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+
+

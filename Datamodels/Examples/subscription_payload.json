@@ -1,0 +1,25 @@
+{
+    "id": "urn:ngsi-ld:Notification:54321",
+    "type": "Notification",
+    "subscriptionId": "urn:ngsi-ld:Subscription:extOrderAllAttributesFull",
+    "notifiedAt": "2025-02-20T15:00:00.000Z",
+    "data": [
+      {
+        "id": "urn:ngsi-ld:extOrder:order001",
+        "type": "extOrder",
+        "orderId": {
+          "type": "Property",
+          "value": "test"
+        },
+        "orderQuantity": {
+          "type": "Property",
+          "value": 25
+        },
+        "timestamp": {
+          "type": "Property",
+          "value": "2025-02-20T15:00:00.000Z"
+        }
+      }
+    ]
+  }
+  
