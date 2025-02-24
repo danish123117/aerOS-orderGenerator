@@ -17,7 +17,7 @@ The application requires the following environment variables:
 - `NOTIFY_PORT` (default: `3030`)
 
 ## Application Screenshot
-![Application Screenshot](/Application Images/App Screenshot.png)
+![App Screenshot](/Application Images/App Screenshot.png)
 
 ## Functionality
 - Creates an entity for the generated order: `urn:ngsi-ld:extOrder:order001`
