@@ -43,7 +43,7 @@ while True:
     order_id = str(uuid.uuid4())
     timestamp = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%S.%fZ")[:-2]
     
-    patch_status =patch_order(orderId=order_id,timestamp=timestamp,orderQuantity=1,orionUrl=f"{orion}:{orion_port}")
+    patch_status =patch_order(orderId=order_id,timestamp=timestamp,orderQuantity=1,orion=orion,orion_port=orion_port,context=context,context_port= context_port)
     status = "Success" if patch_status.status_code == 204 else "Failed"
     order = f"Order ID: {order_id},  Quantity: {quantity}, Timestamp: {timestamp}, Status: {status}"
     with open("orders.log", "a") as f:

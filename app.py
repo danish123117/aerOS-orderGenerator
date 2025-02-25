@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, jsonify, Response
+from flask import Flask, render_template, jsonify, Response
+from flask import request as frequest
 import subprocess
 import os
 import signal
@@ -6,6 +7,7 @@ import time
 import threading
 from ngsiOperations.ngsildOperations.ngsildEntityCreator import ngsi_subscribe_DOG, ngsi_setup_DOG
 from waitress import serve
+
 
 app = Flask(__name__)
 order_process = None
@@ -18,7 +20,7 @@ def index():
 def start_order():
     global order_process
     if order_process is None:
-        freq = request.json.get("frequency")
+        freq = frequest.json.get("frequency")
         order_process = subprocess.Popen(["python", "order.py", freq])
         return jsonify({"status": "started"}), 200
     return jsonify({"status": "already running"}), 400
